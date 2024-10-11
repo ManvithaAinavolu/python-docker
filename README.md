@@ -80,3 +80,30 @@ docker run --rm -v .:/app python :<version> python --version.
 use your required verision in the place of <version>
 
 
+to deletee a container use
+docker rm
+or by name
+docker rm <container-name>
+
+to deleet all the containers
+
+docker container prune
+
+to deleet a image 
+
+docker rmi <image-name:tag>
+
+to create a container that runs continuously without stooping immeditley:
+
+we can use 
+while True: -- in python
+
+
+to stop the container thta was running use
+docker rm -f <contanerid>
+
+docker exec d16b5f292840 python -c "print('hi')"
+
+docker exec -it d16b5f292840 python /app/prog.py
+
+docker exec -it d16b5f292840 bash
